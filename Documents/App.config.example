@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  
+  <configSections>
+      <section name="tokens" type="LoadData.Documents.LoadDocuments, LoadData.Documents" />
+  </configSections>
+
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+  </startup>
+  
+ 
+  <tokens>
+   <token value="********************************" />
+   <token value="********************************" />
+   <token value="********************************" />
+   <token value="********************************" />
+</tokens>
+    
+    
+  <appSettings>
+    <add key="DocsUrl" value="https://**********" />
+    <add key="DocsToken" value="token=**********************************" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <connectionStrings>
+    <add name="ImpCnn" connectionString="************" providerName="******************" />
+  </connectionStrings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
+
+
